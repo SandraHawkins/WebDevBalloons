@@ -1,0 +1,168 @@
+h1 {
+   /* border-style: solid;
+    border-width: 1px;
+    border-color: #4c0072;*/
+    /* The next line is shorthand for the 3 lines above */
+    border: 1px solid #4c0072;
+    background-color: #f0e6f5;
+    padding: 0.5em;
+    font-size: 3em;
+    color: #609;
+    font-weight: 400;
+    font-family: "Courier New", Courier, monospace;
+    /* The following adds a gradient to the background of the main heading*/
+    /*background-image: linear-gradient(to bottom right, rgb(0, 34, 255), rgb(255, 0, 251));*/
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #99007f;
+    font-style: italic;
+    font-size: 1.5em;
+    background-color: #f0e6f5;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+}
+
+h3 {
+    /*border: 1px solid;    */
+    border-width: 1px;
+    border-style: solid;
+    padding-bottom: 0.25em;
+}
+
+em {
+    font-style: normal;
+    font-weight: 700;
+}
+
+strong {
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: 555;
+}
+
+.highlight {
+    color: #f60;
+}
+
+.special {
+    font-size: 2em;
+    color: #0A0;
+    font-style: italic;
+}
+
+.introduction {
+    font-size: 1.5em;
+    color: #72005f;
+    font-style: italic;
+}
+
+/* For the <ul> links for the menu */
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #D9EECE;
+          /* width style color */
+    border: 1px solid #4c0072;
+    /* Removes the border from the top */
+    border-top-style: none;
+    display: flex;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #226800;
+    font-weight: bold;
+    display: block;
+    padding: 0.75em 1em .75em 1em;
+}
+
+.navigation a:hover {
+    background-color: #C4E8B1;
+}
+
+/* Make sure the following three pseudoclass rules 
+   are after the .navigation class selector  */
+a:link {
+    color: #609;
+}
+
+a:visited {
+    color: #876399;
+}
+
+a:hover {
+    color: #390;
+}
+
+/* Makes the images responsive to different size windows */
+.gallery {
+    display: flex;
+    /*width: 85%;*/
+    flex-wrap: wrap;
+    flex-direction: row; /* default */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img:hover {
+    width: 150%;
+}
+
+/* The images that are within the gallery class*/
+.gallery img {
+    width: 200px;
+    height: 200px;
+
+    /***** Transitions *****/
+    transition-timing-function: ease-in;
+}
+
+
+
+/* Just making space for a 'show/ hide' heading */
+.makeSpace {
+    height: 50px;
+}
+
+/* Turn off the border for this h3 heading only */
+.makeSpace h3 {
+    border-style: none;
+}
+
+/* Styling the form, so that the input elements will be one per line
+and not all on one line 
+*/
+form {
+    width: 30em; /* */
+}
+
+label, input, textarea {
+    display:block;
+    width: 100%; /* 100% of the parent */
+    box-sizing: border-box;
+}
+
+
+.form-control{
+    margin-bottom: 1em;
+}
+
+
+textarea{
+    min-height: 10em;
+}
+
+/* Adds a little bit of space around the form controls */
+.form-control input
+.form-control textarea {
+    padding: 0.5em;
+}
+
+
+

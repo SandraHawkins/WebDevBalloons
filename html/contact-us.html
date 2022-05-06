@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="../css/balloons.css" />
+    </head>
+    <body>
+        <h1>Balloons Ltd.</h1>
+
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
+        </ul>
+
+        <h2>Please find our contact details below</h2>
+
+        <p>Please feel free to <a href="mailto:balloons@example.com">send us an email</a> if you would like to know more about our products</p>    
+
+        <form action="process.php">
+            <!-- pop each form control into a div for styling -->
+            <!-- a div has no semantic meaning, it is just for styling -->
+            <div class="form-control">
+                <label for="fname">Your full name</label>
+                <!-- required if present below, means this field has to be filled in -->
+                <input required id="fname" type="text" name="fname"/>
+            </div>
+            
+            <div class="form-control">
+                <label for="email">Your email address</label>
+                <input id="email" type="email" name="email_address"/>
+            </div>
+            
+            <div class="form-control">
+                <label for="age">Your age</label>
+                <input type="number" name="age" id="age" min="1" max="150"/>
+            </div>
+            
+            <div class="form-control">
+                <label for="story">Your Story</label>
+                <textarea id="story" name="story"></textarea> <!-- must have a closing tag-->
+            </div>
+            
+            <input type="submit" value="Go!"/>
+        </form>
+    </body>
+</html> 

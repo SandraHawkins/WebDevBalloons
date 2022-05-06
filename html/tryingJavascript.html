@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript examples</title>
+        <link rel="stylesheet" href="../css/balloons.css" />
+
+        <script>
+            function myFunction() {
+                document.getElementById('ChangeThisPara').innerHTML = "Paragraph changed";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Balloons Ltd.</h1>
+
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
+        </ul>
+
+        <h2>Please find our contact details below</h2>
+
+        <p>The date and time will go next:</p>
+        <div class="makeSpace">
+            <p id="dateAndTime"></p>
+        </div>
+        
+        <button type="button" onclick="document.getElementById('dateAndTime').innerHTML = Date()">Date and time</button>
+
+        <h2>Hide and Show Heading Example below:</h2>
+
+        <div class="makeSpace">
+            <h3 id="hideAndShow">Hide and Show this heading</h3>
+        </div>
+
+        <button type="button" onclick="document.getElementById('hideAndShow').style.display = 'none'">Hide Heading</button>
+        <button type="button" onclick="document.getElementById('hideAndShow').style.display = 'block'">Show Heading</button>
+
+        <p id="ChangeThisPara">
+            Trying out changing the text in a paragraph
+        </p>
+        <button type="button" onclick="myFunction()">Try myFunction()</button>
+    </body>
+</html>
